@@ -1,24 +1,25 @@
 let expenses = [];
 
 
-    function addExpense() {
-      const amount = document.getElementById('expenseAmount').value;
-      const description = document.getElementById('expenseDescription').value;
-      const category = document.getElementById('expenseCategory').value;
-
-      if (amount && description && category) {
-        const expense = {
-          id: Date.now(),
-          amount: parseFloat(amount),
-          description,
-          category
-        };
-
-        expenses.push(expense);
-        renderExpenses();
-        clearForm();
-      }
+function addExpense() {
+    const amount = document.getElementById('expenseAmount').value;
+    const description = document.getElementById('expenseDescription').value;
+    const category = document.getElementById('expenseCategory').value;
+  
+    if (amount && description && category) {
+      const expense = {
+        id: Date.now(),
+        amount: parseFloat(amount),
+        description,
+        category
+      };
+  
+      expenses.push(expense);
+      renderExpenses();
+      clearForm();
     }
+  }
+  
 
     function renderExpenses() {
       const expenseList = document.getElementById('expenseList');

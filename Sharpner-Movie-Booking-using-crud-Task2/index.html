@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Movie Booking</h1>
+        <h4 class="book">Total Booked: <span id="total-booked">0</span></h4>
+        <label for="movie-slot">Find slot : 
+            <input type="number" placeholder="Enter slot" id="movie-slot">
+        </label>  
+    </div>
+
+    <div class="content">
+        <label for="username">User Name: 
+            <input type="text" id="username">
+        </label>
+        <label for="seat-no">Seat Number: 
+            <input type="number" id="seat-no">
+        </label>
+        <button id="add-button">ADD</button>
+    </div>  
+
+    <div class="booked-list">
+        <h2>Booked Seats:</h2>
+        <ul id="booking-list">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

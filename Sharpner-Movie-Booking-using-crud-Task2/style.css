@@ -1,0 +1,12 @@
+.header {
+   text-align: center;
+}
+.content {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    
+}
+.content label {
+    padding: 5px;
+}
